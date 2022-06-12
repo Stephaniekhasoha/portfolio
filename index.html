@@ -16,14 +16,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head> 
+</head>
 <body>
-    
-    <!--custom js link-->
-    <script src="./js/script.js"></script>
+    <header>
+        <div class="portfolio">
+            <img src="./assets/steph.png" alt="Steph's photo">
+            <h1>Stephanie Khasoha Portfolio</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a id="active" href="./">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
 
-    <!--ionicon link-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.4dcom/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <div class="navbar-buttons">
+                <a href="./login.html"><button class="login-button">Login</button></a>
+                <a href="./registeration.html"><button class="register-button" id="register-button">Signup</button></a>
+            </div>
+            
+        </nav>
+    </header>
+    <main id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident quisquam excepturi accusantium ea expedita, ullam reprehenderit nihil. Facere id explicabo atque amet voluptatibus quas qui suscipit molestias optio adipisci.</p>
+        <div class="content">
+            <h2>Priorities</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Cleaning</li>
+                <li>Writing</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Listening to Music</li>
+                <li>Dancing</li>
+                <li>Swimming</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Other Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>React Native</li>
+            </ul>
+        </div>
+        <div class="contact-button-wrapper">
+            <a href="./contact.html"><button class="contact-button">Contact me</button></a>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

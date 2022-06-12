@@ -1,67 +1,183 @@
-/* #style.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4ED;
+  letter-spacing: 1.8;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
 
-/**
- *copyright 2022 @codewithstephanie
- */
+header {
+  /* height: 50vh; */
+  margin: 50px 0;
+}
 
+main {
+  margin: 20px 10%;
+  /* text-align: center; */
+}
 
+h2 {
+  color: #2E86AB;
+  font-weight: 900;
+}
 
+/* ul {
+  list-style-image: url('/assets/bluetick.png');
+  
+} */
 
- /**
-  *CUSTOM PROPERTY
-  */
+ul, li {
+  padding: 0;
+  margin: 0;
+  line-height: 30px; 
+}
 
-  :root {
-    /**
-     *colors
-     */
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-     /* gradient */
-    
-    --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    #3f3f40 3%, 
-    #303030 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    #2d2d2e40 0%, 
-    #1b1b1d00 100%
-  ),#202022;
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    #ffda6b 0%, 
-    #ffc06100 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    #ffda6b40 0%, 
-    #ffbb5c00 59.86%
-  ),#202022;
-  --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    #404040 0%, 
-    #40404000 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    #ffdb70, 
-    #ffbb5c
-  );
+.content ul li {
+  width: 30%;
+  margin-bottom: 10px;
+}
 
-  /* solid */
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20%;
+  width: 60%;
+}
 
-  --jet: #383838;
-  --onyx: #2b2b2c;
-  --eerie-black-1: #202022;
-  --eerie-black-2: #1e1e1f;
-  --smoky-black: #121212;
-  --white-1: #ffffff;
-  --white-2: #fafafa;
-  --orange-yellow-crayola: #ffdb70;
-  --vegas-gold: #ceb15a;
-  --light-gray: #d6d6d6;
-  --light-gray-70: #d6d6d6b3;
-  --bittersweet-shimmer: #b84c4c;
-     
-  }
+.portfolio img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.portfolio h1 {
+  font-size: 2.5em;
+  margin: 0 30px;
+}
+
+.navbar {
+  display: flex;
+  /* width: 50%; */
+  justify-content: space-between;
+  margin: 20px 10%;
+  padding: 20px 50px;
+  background-color: #30292F;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.navbar ul li a:hover {
+  color: #2E86AB;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.content {
+  box-shadow: 0 0 4px #00000050;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 30px 0;
+}
+
+.content:hover {
+  box-shadow: 0 0 8px #00000050;
+}
+
+.content ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.content ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2E86AB; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.login-button, .register-button {
+  background-color: #2E86AB;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.login-button:hover, .register-button:hover, .contact-button:hover {
+  background-color: #2E86ABd0;
+}
+
+.contact-button-wrapper {
+  display: flex;
+  margin: 50px 0;
+} 
+
+.contact-button {
+  background-color: #2E86AB;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#active {
+  color: #2E86AB;
+}
+
+/* contact page */
+
+input {
+  width: 100%;
+}
+
+.contact-form {
+  margin: 50px 0;
+}
+
+.contact-form div {
+  margin: 20px 0;
+}
+
+.contact-form .two-per-row {
+  display: flex;
+
+}
+
+.two-per-row div {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.one-per-row {
+  display: flex;
+  width: 80%;
+}
