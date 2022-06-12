@@ -156,6 +156,7 @@ a {
 
 input {
   width: 100%;
+  font-size: inherit;
 }
 
 .contact-form {
@@ -175,6 +176,7 @@ input {
   display: flex;
   width: 50%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .one-per-row {
